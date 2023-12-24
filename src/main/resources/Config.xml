@@ -13,9 +13,61 @@
         <property name="roll_No">
             <value>2001028</value>
         </property>
-        <property name="pass">
-            <value>true</value>
+        <property name="marks">
+            <map>
+                <entry>
+                    <key> <value>English</value></key>
+                    <value>50</value>
+                </entry>
+                <entry>
+                    <key> <value>Tamil</value></key>
+                    <value>70</value>
+                </entry>
+                <entry>
+                    <key> <value>Computer</value></key>
+                    <value>90</value>
+                </entry>
+                <entry>
+                    <key> <value>Maths</value></key>
+                    <null/>
+                </entry>
+
+            </map>
         </property>
+        <property name="Student_names">
+            <list>
+                <value>Gangadhar</value>
+                <value>Aravind</value>
+                <value>Smith</value>
+                <null/>
+            </list>
+        </property>
+        <property name="subject">
+            <set>
+                <value>English</value>
+                <value>Tamil</value>
+                <value>Maths</value>
+                <value>Science</value>
+                <value>Social</value>
+                <null/>
+            </set>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="Hello">Hai</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="probj" class="com.SpringPractice.Beans.PrincipleRoom">
+        <constructor-arg>
+            <value>SriRam</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value>10Years</value>
+        </constructor-arg>
+        <constructor-arg>
+            <ref bean="cls"/>
+        </constructor-arg>
     </bean>
 
 </beans>
